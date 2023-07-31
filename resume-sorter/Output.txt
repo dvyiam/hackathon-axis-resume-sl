@@ -1,0 +1,37 @@
+﻿
+Evaluation Only. Created with Aspose.Words. Copyright 2003-2023 Aspose Pty Ltd.
+Sourabh Patnaik
++91-6260305345 | sourabhpatnayak19@gmail.com | LinkedIn | GitHub | Portfolio | Artstation |
+Education
+Vellore Institute of Technology Bhopal, MP Bachelor of Technology in Computer Science Spz in Gaming Technology June. 2019 – May 2023
+Shiv Jyoti Sr Sec School Kota, Rajasthan Higher Secondary Education - (XII) June. 2016 – May 2018
+ExperienceInternet of Things Powered By IBM Nov 2021 – Dec 2021 SmartBridge Educational Services Pvt Ltd INDIA
+• Developed a medicine reminder application for elderly people using various technology that is available in IBM
+• Technology used : Python , IBM Cloud , CloudantDB , NodeRED
+ProjectsLegend Battle Arena – Link July 2020 – Nov 2020
+• Developed a Survival type game where you have to survive certain type of enemy waves
+• Our game is designed to provide players with an immersive and engaging experience.
+• Tech Stack - Unity3D,Photoshop
+Tower Bizzare Adventure – Link Jan 2021 – May 2021
+• It is a subgenre of strategy games where the goal is to defend a player’s territories or possessions by obstructing the enemy attackers or by stopping enemies from reaching the exits
+• Our game offer a fun and challenging experience that requires strategic thinking and quick reflexes.
+• Tech Stack - Unity,Photoshop
+Movie Catalogue –Link Mar 2022 – May 2022
+• It’s a website where you can search and read overview of any movie that is available.
+• Our user-friendly interface and seamless navigation make it easy for users to browse and explore our vast collection of movies
+• Tech Stack - HTML, CSS, JS, TMDB database for movies
+QR Code generator – Link July 2022
+• It’s a simple QR Code Generator where you can convert any kind of texts, links, numbers and messages into a QR code
+• Our QR code generator is designed with the user in mind, offering a user-friendly interface that is easy to navigate. Users can create a code in just a few clicks.
+• Tech Stack - HTML, CSS, JS,QR code API
+Technical Skill and InterestsLanguages: Python, SQL , JavaScript, HTML/CSS
+Frameworks: React, Bootstrap
+Developer Tools: Git, VS Code, Visual Studio, Unity , Unreal Engine
+Creative Suite: Blender , Substance Painter , Adobe Photoshop , Davinci Resolve , Canva Interests: Art, cricket, Table Tennis, Competitive Video games, 3D modeling, 3D Environment Design
+Extra-Curricular And Achievements
+ 
+• Lead artist for Game jam event, Jan 20
+• Top 100 out of 5000 in AR-VR Game Development Hackathon organized by iHUB DivyaSampark@IIT Roorkee and TechXR Feb 2022
+• Core Member for Outreach team, AdVITya (Inter University Techno-Cultural Festival)
+• Participant for Gaming Event (Inter-Branch Event), VIT Bhopal
+Created with an evaluation copy of Aspose.Words. To discover the full versions of our APIs please visit: https://products.aspose.com/words/
