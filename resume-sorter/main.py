@@ -15,13 +15,20 @@ for elem in text:
     text_all.extend(elem.split(" "))
 
 degrees = ["B.Tech", "btech", "B.TECH", "BTECH", "b.tech", "M.Tech", "mtech", "M.TECH", "MTECH", "m.tech"]
+skills = ["html","javascript", "css", "js","react.js","angular.js","express.js", "c","c++","c#","node.js","mongoDB","firebase","tailwind css","flask","django", "selenium"]
+emails = ["@gmail.com", "@yahoo.com", "@hotmail.com", "@outlook.com","@icloud.com"]
+
+
+
 
 info_dict = {
     "name": text[0],
     "education_degree": [],
     "degree_gpa": 0.0,
     "experience": [],
-    "mail": ""
+    "email": "",
+    "skills": 0,
+    "phone": "",
 }
 
 for ele in text:
