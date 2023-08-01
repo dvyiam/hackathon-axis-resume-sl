@@ -1,8 +1,8 @@
-# import aspose.words as aw
+import aspose.words as aw
 from pprint import pprint
 
-# doc = aw.Document("resume.pdf")
-# doc.save("u.txt")
+doc = aw.Document("./resume.pdf")
+doc.save("u.txt")
 try:
     with open("u.txt", errors="ignore") as file:
         text = file.readlines()
