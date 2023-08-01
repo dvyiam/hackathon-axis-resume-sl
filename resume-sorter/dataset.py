@@ -3,3 +3,4 @@ skills = ["html", "javascript", "css", "js", "react.js", "angular.js", "express.
           "mongoDB", "firebase", "tailwind css", "flask", "django", "selenium", "java", "python"]
 skills = [ele.title() for ele in skills]
 emails = ["@gmail.com", "@yahoo.com", "@hotmail.com", "@outlook.com", "@icloud.com"]
+education = ["school", "college", "university"]

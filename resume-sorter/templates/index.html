@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="{{ url_for('receive_data') }}" method="post" enctype="multipart/form-data">
+        <input type="file" placeholder="resume" name="file" />
+        <button type="submit" value="Upload">Ok</button>
+    </form>
+</body>
+</html>
