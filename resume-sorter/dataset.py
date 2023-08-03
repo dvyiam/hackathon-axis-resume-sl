@@ -4,3 +4,19 @@ skills = ["html", "javascript", "css", "js", "react.js", "angular.js", "express.
 skills = [ele.title() for ele in skills]
 emails = ["@gmail.com", "@yahoo.com", "@hotmail.com", "@outlook.com", "@icloud.com"]
 education = ["school", "college", "university", "academy", "institute"]
+
+
+job_tech_category = [
+    {
+        "role": "software developer",
+        "skills": ["c++", "java", "python"]
+    },
+    {
+        "role": "frontend engineer",
+        "skills": ["html", "css", "javascript", "js", "react.js", "bootstrap", "figma"]
+    },
+    {
+        "role": "backend engineer",
+        "skills": ["python", "java", "springboot", "flask", "django", "c", "c++"]
+    }
+]
