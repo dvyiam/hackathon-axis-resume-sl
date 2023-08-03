@@ -4,10 +4,10 @@ from information import info_dict
 import dataset
 
 
-doc = aw.Document("resume.pdf")
-doc.save("u.txt")
+# doc = aw.Document("resume.pdf")
+# doc.save("u.txt")
 try:
-    with open("u.txt", errors="ignore") as file:
+    with open("./resume_files/Output.txt", errors="ignore") as file:
         text = file.readlines()
 except:
     text = []
@@ -26,7 +26,8 @@ for ele in text:
     if "CGPA" in ele:
         info_dict["degree_gpa"] = ele.split(" ")[-2]
     for ed in dataset.education:
-        pass
+        if ed in ele or ed.title() in ele:
+            info_dict["education"].append(ele)
 
 skill_count = 0
 

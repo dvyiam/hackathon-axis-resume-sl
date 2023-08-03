@@ -9,3 +9,18 @@ info_dict = {
     "phone": "",
     "education": []
 }
+
+job_tech_category = [
+    {
+        "role": "software developer",
+        "skills": ["c++", "java", "python"]
+    },
+    {
+        "role": "frontend engineer",
+        "skills": ["html", "css", "javascript", "js", "react.js", "bootstrap", "figma"]
+    },
+    {
+        "role": "backend engineer",
+        "skills": ["python", "java", "springboot", "flask", "django", "c", "c++"]
+    }
+]
