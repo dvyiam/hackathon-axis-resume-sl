@@ -2,6 +2,7 @@ import aspose.words as aw
 from pprint import pprint
 from information import info_dict
 import dataset
+import spacy
 
 
 # doc = aw.Document("resume.pdf")
@@ -12,6 +13,16 @@ try:
 except:
     text = []
     print("error")
+
+
+def perform_ner(resume_text):
+    nlp = spacy.load("en_core_web_sm")
+    doc = nlp(resume_text)
+    entities = {}
+    for ent in doc.ents:
+        entities[ent.label] = entities.get(ent.label_, []) + [ent.text]
+    return entities
+
 
 words_all = []
 text = [elem for elem in text[2:len(text) - 1:]]
@@ -28,6 +39,9 @@ for ele in text:
     for ed in dataset.education:
         if ed in ele or ed.title() in ele:
             info_dict["education"].append(ele)
+
+    resume_entities = perform_ner(ele)
+    print(resume_entities)
 
 skill_count = 0
 
@@ -47,3 +61,5 @@ for ele in words_all:
 info_dict["skill_count"] = skill_count
 
 pprint(info_dict)
+
+
