@@ -7,7 +7,7 @@ import dataset
 # doc = aw.Document("resume.pdf")
 # doc.save("u.txt")
 try:
-    with open("./resume_files/Output.txt", errors="ignore") as file:
+    with open("u.txt", errors="ignore") as file:
         text = file.readlines()
 except:
     text = []
@@ -40,6 +40,9 @@ for ele in words_all:
         else:
             info_dict["skills"].append(ele)
             skill_count += 1
+    for mail in dataset.emails:
+        if mail in ele:
+            info_dict["email"] = ele
 
 info_dict["skill_count"] = skill_count
 
