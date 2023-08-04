@@ -6,7 +6,7 @@ info_dict = {
     "email": "",
     "skills": [],
     "skill_count": 0,
-    "phone": "",
+    "phone": [],
     "education": []
 }
 

@@ -2,45 +2,34 @@
 from pprint import pprint
 from information import info_dict
 import dataset
-import spacy
+import re
 
 # doc = aw.Document("resume.pdf")
 # doc.save("u.txt")
 try:
     with open("u.txt", errors="ignore") as file:
-        text = file.readlines()
+        lines_all = file.readlines()
 except:
-    text = []
+    lines_all = []
     print("error")
 
-
-# def perform_ner(resume_text):
-#     nlp = spacy.load("en_core_web_sm")
-#     doc = nlp(resume_text)
-#     entities = {}
-#     for ent in doc.ents:
-#         entities[ent.label] = entities.get(ent.label_, []) + [ent.text]
-#     return entities
-
-
+text_all = ""
 words_all = []
-text = [elem for elem in text[2:len(text) - 1:]]
-for elem in text:
+lines_all = [elem for elem in lines_all[2:len(lines_all) - 1:]]
+for elem in lines_all:
     words_all.extend(elem.split(" "))
+    text_all += elem
 
 words_all = [ele.split(",")[0] for ele in words_all]
 
-info_dict["name"] = text[0]
+info_dict["name"] = lines_all[0]
 
-for ele in text:
+for ele in lines_all:
     if "CGPA" in ele:
         info_dict["degree_gpa"] = ele.split(" ")[-2]
     for ed in dataset.education:
         if ed in ele or ed.title() in ele:
             info_dict["education"].append(ele)
-
-    # resume_entities = perform_ner(ele)
-    # print(resume_entities)
 
 skill_count = 0
 
@@ -56,9 +45,11 @@ for ele in words_all:
     for mail in dataset.emails:
         if mail in ele:
             info_dict["email"] = ele
+    phone_numbers = re.findall(r"[\+\(]?[1-9][0-9 .\-\(\)]{8,}[0-9]", ele)
+    info_dict["phone"].extend(phone_numbers)
 
 info_dict["skill_count"] = skill_count
-
+print(text_all)
 pprint(info_dict)
 
 
