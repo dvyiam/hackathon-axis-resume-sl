@@ -21,7 +21,7 @@ for elem in lines_all:
     text_all += elem
 
 words_all = [ele.split(",")[0] for ele in words_all]
-
+text_all = re.sub(r'[^\w\s]', '', text_all).replace("â ", "")
 info_dict["name"] = lines_all[0]
 
 for ele in lines_all:
@@ -49,7 +49,6 @@ for ele in words_all:
     info_dict["phone"].extend(phone_numbers)
 
 info_dict["skill_count"] = skill_count
-print(text_all)
-pprint(info_dict)
 
+pprint(info_dict)
 
