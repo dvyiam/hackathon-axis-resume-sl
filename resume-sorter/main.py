@@ -53,5 +53,3 @@ class RunThis:
             info_dict["phone"].extend(phone_numbers)
 
         info_dict["skill_count"] = skill_count
-
-        pprint(info_dict)

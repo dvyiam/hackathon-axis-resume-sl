@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>{{info["name"]}}</p>
+
+    {%for d in info["education_degree"]%}
+    <p>{{d}}</p>
+    {%endfor%}
+
+    <p>{{info["degree_gpa"]}}</p>
+
+    {%for d in info["experience"]%}
+    <p>{{d}}</p>
+    {%endfor%}
+
+    <p>{{info["email"]}}</p>
+
+    {%for d in info["skills"]%}
+    <p>{{d}}</p>
+    {%endfor%}
+
+    <p>{{info["skill_count"]}}</p>
+
+    {%for d in info["phone"]%}
+    <p>{{d}}</p>
+    {%endfor%}
+
+    {%for d in info["education"]%}
+    <p>{{d}}</p>
+    {%endfor%}
+</body>
+</html>
